@@ -6,9 +6,9 @@
 </p>
 <br/>
 
-The better way of interpreting coefficients in a model: take a 
-typical sample, vary the variable of interest, and see how that changes the
-prediction. Works for categorical and continuous predictors.
+An intuitive way of interpreting coefficients in a model: take a 
+typical case / sample, vary the variable of interest, and see how that changes 
+the prediction. Works for categorical and continuous predictors.
 
 ![qsec](img/qsec.png)
 
