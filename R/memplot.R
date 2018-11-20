@@ -8,9 +8,9 @@
 #' @param variable a character of the variable of interest
 #' @param ci confidence interval range (default 95%)
 #' @param plt_range optional vector of length 2 indicating the range to plot
-#' over for the x-axis. Defaults to the range of the variable in the data.
+#'     over for the x-axis. Defaults to the range of the variable in the data.
 #' @param collector "typical" or "average" or an abbreviation thereof. See
-#' details.
+#'     details.
 #'
 #' @details The `typical` collector calculates the median values for numeric,
 #' and the most common class for categorical predictors. The `average` collector

@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^LICENSE$
 ^img\.*$
+^.travis.yml$

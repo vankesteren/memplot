@@ -1,5 +1,3 @@
-#' Predict wrappers
-#'
 #' @keywords internal
 compute_prediction <- function(model, new_dat, ci) {
   switch(class(model)[1],
