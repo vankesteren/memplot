@@ -33,10 +33,10 @@ mem_plot <- function(model, variable, ci = .95, plt_range,
   check_predict_method(model)
 
   # Then, try to extract the original dataset
-  data <- extract_data(model)
+  full_df <- extract_data(model)
 
   # Then, check whether variable of interest exists
-  cn <- colnames(dataset)
+  cn <- colnames(full_df)
   if (!variable %in% cn) stop("Variable not found.")
 
   # Set collector (default "typical")
@@ -47,7 +47,7 @@ mem_plot <- function(model, variable, ci = .95, plt_range,
 
   # find variable of interest
   var_idx <- which(match.arg(variable, cn) == cn)
-  var_eff <- dataset[, var_idx]
+  var_eff <- full_df[, var_idx]
 
 
   # create a range of interest
@@ -64,7 +64,7 @@ mem_plot <- function(model, variable, ci = .95, plt_range,
   )
 
   # generate conditional dataset
-  ty_case <- lapply(dataset[, -var_idx], clct_fun)
+  ty_case <- lapply(full_df[, -var_idx], clct_fun)
   df_tpcl <- as.data.frame(lapply(ty_case, rep, length(var_rng)))
   new_dat <- cbind(var_rng, df_tpcl)
   colnames(new_dat) <- c(cn[var_idx], cn[-var_idx])
