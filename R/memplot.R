@@ -1,12 +1,12 @@
 #' Marginal effects at the mean plots
 #'
 #' An intuitive way of interpreting coefficients in a model: take a typical
-#' case/sample, vary the variable of interest, and see how that changes the
+#' case or sample, vary the variable of interest, and see how that changes the
 #' prediction. Works for categorical and continuous predictors.
 #'
 #' @param model a model object with a data slot and a predict() method
 #' @param variable a character of the variable of interest
-#' @param ci confidence interval range (default 95%)
+#' @param ci confidence interval range (default 95\%)
 #' @param plt_range optional vector of length 2 indicating the range to plot
 #'     over for the x-axis. Defaults to the range of the variable in the data.
 #' @param collector "typical" or "average" or an abbreviation thereof. See

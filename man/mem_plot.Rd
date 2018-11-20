@@ -12,7 +12,7 @@ mem_plot(model, variable, ci = 0.95, plt_range,
 
 \item{variable}{a character of the variable of interest}
 
-\item{ci}{confidence interval range (default 95%)}
+\item{ci}{confidence interval range (default 95\%)}
 
 \item{plt_range}{optional vector of length 2 indicating the range to plot
 over for the x-axis. Defaults to the range of the variable in the data.}
@@ -25,7 +25,7 @@ details.}
 }
 \description{
 An intuitive way of interpreting coefficients in a model: take a typical
-case/sample, vary the variable of interest, and see how that changes the
+case or sample, vary the variable of interest, and see how that changes the
 prediction. Works for categorical and continuous predictors.
 }
 \details{
