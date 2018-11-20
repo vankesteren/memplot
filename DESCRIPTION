@@ -1,0 +1,15 @@
+Package: memplot
+Type: Package
+Title: Marginal Effects at the Mean Plots
+Version: 0.1.0
+Author: Erik-Jan van Kesteren
+Maintainer: Erik-Jan van Kesteren <e.vankesteren1@uu.nl>
+Description: The better way of interpreting coefficients in a model: take a 
+    typical sample, vary the variable of interest, and see how that changes the
+    prediction. Works for categorical and continuous predictors.
+License: MIT + file LICENCE
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2,
+    firatheme
+RoxygenNote: 6.1.0
